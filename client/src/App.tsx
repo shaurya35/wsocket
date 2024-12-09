@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 function App() {
   const [messages, setMessages] = useState([]);
-
+// ws
   useEffect(() => {
     const ws = new WebSocket("https://localhost:8080/");
     ws.onmessage = (event) => {
